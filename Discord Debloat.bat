@@ -20,6 +20,7 @@ del /f /q chrome*.pak  > nul 2> nul
 del /f /q app.ico > nul 2> nul
 del /f /q %LOCALAPPDATA%\Discord\Update.exe > nul 2> nul
 del /f /q "%HOMEPATH%\Desktop\Discord.lnk" > nul 2> nul
+del /f /q "%HOMEPATH%\Desktop\Discord Start.exe" > nul 2> nul
 mklink "Discord Start.exe" "%cd%\Discord.exe" > nul 2> nul
 move "Discord Start.exe" %HOMEPATH%\Desktop  > nul 2> nul
 
