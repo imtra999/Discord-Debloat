@@ -14,10 +14,10 @@ move "%LOCALAPPDATA%\Discord\en-US.pak" "locales" > nul 2> nul
 
 rmdir /s /q "%LOCALAPPDATA%\Discord\Packages" > nul 2> nul
 del /f /q "%LOCALAPPDATA%\Discord\*.log" > nul 2> nul
+del /f /q "%LOCALAPPDATA%\Discord\app.ico" > nul 2> nul
 
 cd /d %LOCALAPPDATA%\Discord\app-1.0.*\ > nul 2> nul
 del /f /q chrome*.pak  > nul 2> nul
-del /f /q app.ico > nul 2> nul
 del /f /q %LOCALAPPDATA%\Discord\Update.exe > nul 2> nul
 del /f /q "%HOMEPATH%\Desktop\Discord.lnk" > nul 2> nul
 del /f /q "%HOMEPATH%\Desktop\Discord Start.exe" > nul 2> nul
