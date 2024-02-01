@@ -27,6 +27,7 @@ move "Discord Start.exe" %HOMEPATH%\Desktop  > nul 2> nul
 choice /c YN /m "Remove Discord Overlay?"
 IF %ERRORLEVEL% EQU 1 (
 cd /d %LOCALAPPDATA%\Discord\app-1.0.*\modules > nul 2> nul
+rmdir /s /q discord_overlay2-1 > nul 2> nul
 rmdir /s /q discord_overlay2-2 > nul 2> nul
 )
 
